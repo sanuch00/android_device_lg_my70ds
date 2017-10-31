@@ -17,7 +17,7 @@
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 DEVICE_PACKAGE_OVERLAYS := \
-    device/lg/my90ds/overlay
+    device/lg/my70ds/overlay
 
 
 
@@ -38,7 +38,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.xml \
     frameworks/native/data/etc/android.hardware.touchscreen.xml:system/etc/permissions/android.hardware.touchscreen.xml \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
-    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
@@ -53,7 +52,7 @@ PRODUCT_COPY_FILES += \
 	
 # GPS
 PRODUCT_COPY_FILES += \
-     device/lg/my90ds/rootdir/system/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
+     device/lg/my70ds/rootdir/system/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
 
 PRODUCT_PACKAGES += \
     gps.mt6582
@@ -61,47 +60,47 @@ PRODUCT_PACKAGES += \
 
 # Audio	
 PRODUCT_COPY_FILES += \
-    device/lg/my90ds/rootdir/system/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    device/lg/my90ds/rootdir/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    device/lg/my90ds/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    device/lg/my90ds/rootdir/system/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
+    device/lg/my70ds/rootdir/system/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    device/lg/my70ds/rootdir/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/lg/my70ds/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    device/lg/my70ds/rootdir/system/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml
 
 # Thermal
 PRODUCT_COPY_FILES += \
-     device/lg/my90ds/rootdir/system/etc/thermal/thermal.conf:system/etc/.tp/thermal.conf \
-     device/lg/my90ds/rootdir/system/etc/thermal/.ht120.mtc:system/etc/.tp/.ht120.mtc \
-     device/lg/my90ds/rootdir/system/etc/thermal/thermal.off.conf:system/etc/.tp/thermal.off.conf
+     device/lg/my70ds/rootdir/system/etc/thermal/thermal.conf:system/etc/.tp/thermal.conf \
+     device/lg/my70ds/rootdir/system/etc/thermal/.ht120.mtc:system/etc/.tp/.ht120.mtc \
+     device/lg/my70ds/rootdir/system/etc/thermal/thermal.off.conf:system/etc/.tp/thermal.off.conf
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    device/lg/my90ds/rootdir/system/usr/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl
+    device/lg/my70ds/rootdir/system/usr/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl
 
 # Hostapd
 PRODUCT_COPY_FILES += \
-    device/lg/my90ds/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-    device/lg/my90ds/rootdir/system/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    device/lg/my90ds/rootdir/system/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny
+    device/lg/my70ds/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    device/lg/my70ds/rootdir/system/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    device/lg/my70ds/rootdir/system/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny
 	
 PRODUCT_TAGS += dalvik.gc.type-precise
 
 # RAMDISK
 PRODUCT_COPY_FILES += \
-    device/lg/my90ds/rootdir/root/init.magna_common.rc:root/init.magna_common.rc \
-    device/lg/my90ds/rootdir/root/init.protect.rc:root/init.protect.rc \
-    device/lg/my90ds/rootdir/root/fstab.magna:root/fstab.magna \
-    device/lg/my90ds/rootdir/root/init.modem.rc:root/init.modem.rc \
-    device/lg/my90ds/rootdir/root/factory_init.rc:root/factory_init.rc \
-    device/lg/my90ds/rootdir/root/ueventd.magna.rc:root/ueventd.magna.rc \
-    device/lg/my90ds/rootdir/root/init.magna.usb.rc:root/init.magna.usb.rc \
-    device/lg/my90ds/rootdir/root/init.zeta0y_core.rc:root/init.zeta0y_core.rc \
-    device/lg/my90ds/rootdir/root/init.magna.rc:root/init.magna.rc \
-    device/lg/my90ds/rootdir/root/sbin/chargerlogo:root/sbin/chargerlogo
+    device/lg/my70ds/rootdir/root/init.magna_common.rc:root/init.magna_common.rc \
+    device/lg/my70ds/rootdir/root/init.protect.rc:root/init.protect.rc \
+    device/lg/my70ds/rootdir/root/fstab.magna:root/fstab.magna \
+    device/lg/my70ds/rootdir/root/init.modem.rc:root/init.modem.rc \
+    device/lg/my70ds/rootdir/root/factory_init.rc:root/factory_init.rc \
+    device/lg/my70ds/rootdir/root/ueventd.magna.rc:root/ueventd.magna.rc \
+    device/lg/my70ds/rootdir/root/init.magna.usb.rc:root/init.magna.usb.rc \
+    device/lg/my70ds/rootdir/root/init.zeta0y_core.rc:root/init.zeta0y_core.rc \
+    device/lg/my70ds/rootdir/root/init.magna.rc:root/init.magna.rc \
+    device/lg/my70ds/rootdir/root/sbin/chargerlogo:root/sbin/chargerlogo
+
     
    
-
 
 
 PRODUCT_PACKAGES += \
@@ -114,8 +113,8 @@ PRODUCT_PACKAGES += \
 
 
 # FMRadio
-# PRODUCT_PACKAGES += \
-#	FMRadio
+PRODUCT_PACKAGES += \
+	FMRadio
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -135,7 +134,7 @@ PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
 # call the proprietary setup
-$(call inherit-product, vendor/lg/my90ds/my90ds-vendor.mk)
+$(call inherit-product, vendor/lg/my70ds/my70ds-vendor.mk)
 
 PRODUCT_PACKAGES += \
     charger \
@@ -158,17 +157,21 @@ PRODUCT_PACKAGES += \
     
 # XCORE995 SHIM LIBS end
 
+# Power
 PRODUCT_PACKAGES += \
-    power
+    power.default \
+    power.mt6582
 
 	
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
 	ro.crypto.state=unencrypted \
 	ro.mount.fs=EXT4 \
-	ro.secure=1 \
-	ro.allow.mock.location=0 \
+	ro.secure=0 \
+	ro.adb.secure=0 \
+	ro.allow.mock.location=1 \
 	ro.debuggable=1 \
 	ro.zygote=zygote32 \
+	persist.sys.usb.config=mtp \
 	camera.disable_zsl_mode=1 \
 	dalvik.vm.dex2oat-Xms=64m \
 	dalvik.vm.dex2oat-Xmx=512m \
@@ -177,8 +180,15 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
 	ro.dalvik.vm.native.bridge=0 \
 	ro.hardware=sprout \
 	ro.telephony.ril_class=SproutRIL \
-	ro.telephony.ril.config=fakeiccid 
+	ro.telephony.ril.config=fakeiccid
 
+ADDITIONAL_DEFAULT_PROPERTIES += \
+	ro.secure=0 \
+	ro.adb.secure=0 \
+	ro.allow.mock.location=1 \
+	ro.debuggable=1 \
+	persist.service.acm.enable=0 \
+	ro.oem_unlock_supported=1	 
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     pm.dexopt.first-boot=verify-at-runtime \
